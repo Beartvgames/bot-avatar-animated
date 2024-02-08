@@ -4,7 +4,7 @@ const token = 'YOUR_TOKEN'; //replace YOUR_TOKEN by your token
 
 async function animatedAvatar() {
     try {
-        const newAvatar = fs.readFileSync('./image/avatar.gif'); 
+        const newAvatar = fs.readFileSync('image/avatar.gif'); 
         const response = await fetch('https://discord.com/api/v9/users/@me', {
             method: 'PATCH',
             headers: {
